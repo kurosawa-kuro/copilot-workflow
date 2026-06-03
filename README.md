@@ -26,9 +26,10 @@ GitHub Copilot を使った開発作業を、メンバーが **START（仕様書
 | ファイル | 内容 |
 |---|---|
 | [src/01_workflow-guide.md](src/01_workflow-guide.md) | **運用ガイド本体（正本）**。mermaid フロー図 + 8 ステップのチェックリスト |
-| [src/02_prompt-templates.md](src/02_prompt-templates.md) | 各ステップで Copilot に渡すプロンプト雛形（GCP / MLOps / Terraform 向け） |
+| [src/02_copilot-prompts.md](src/02_copilot-prompts.md) | 各ステップで Copilot に渡すプロンプト集（GCP / MLOps / Terraform 向け） |
+| [src/03_plan-templates.md](src/03_plan-templates.md) | 作業計画書テンプレート（ゴール・成功定義・種別別確認方法の雛形） |
 
-2 ファイルは密結合。ステップの追加・削除・番号変更は**両方に反映**する。
+3 ファイルは密結合。ステップの追加・削除・番号変更は `01` と `02` の両方に反映する。タスク種別変更は `02` の前提欄と `03` の成功定義テーブルの両方に反映する。
 
 ## ドキュメント早見
 
@@ -38,4 +39,4 @@ GitHub Copilot を使った開発作業を、メンバーが **START（仕様書
 
 ## 前提（プロンプト集）
 
-[src/02_prompt-templates.md](src/02_prompt-templates.md) は **GCP（Vertex AI / BigQuery / Cloud Run Jobs / Elastic Cloud）/ Terraform を主軸とした MLOps 基盤**を想定し、冪等性 / 再実行安全性 / GCP API クォータ・コスト管理 / パイプライン失敗リカバリ / ログ追跡を重視する。
+[src/02_copilot-prompts.md](src/02_copilot-prompts.md) は **GCP（Vertex AI / BigQuery / Cloud Run Jobs / Elastic Cloud）/ Terraform を主軸とした MLOps 基盤**を想定し、冪等性 / 再実行安全性 / GCP API クォータ・コスト管理 / パイプライン失敗リカバリ / ログ追跡を重視する。

@@ -20,7 +20,7 @@
 ## 2. 権威順位（矛盾したときの勝者）
 
 ```
-src/01_workflow-guide.md  >  src/02_prompt-templates.md  >  README.md
+src/01_workflow-guide.md  >  src/02_copilot-prompts.md  >  README.md
 ```
 
 `doc/` 配下のドキュメントは上 3 者の解説・補完であり従属。3 者が互いに矛盾した場合は `src/01_workflow-guide.md` を正として他を合わせ、User に flag する。
@@ -31,8 +31,8 @@ src/01_workflow-guide.md  >  src/02_prompt-templates.md  >  README.md
 
 | 変更 | 連動して直す |
 |---|---|
-| ワークフローステップの追加・削除・番号変更 | `src/01_workflow-guide.md` → `src/02_prompt-templates.md`（同一変更） |
-| 新タスク種別追加（例: Cloud Run Job → 新種別） | `src/02_prompt-templates.md` の前提欄・4-ゴールテンプレート |
+| ワークフローステップの追加・削除・番号変更 | `src/01_workflow-guide.md` → `src/02_copilot-prompts.md`（同一変更） |
+| 新タスク種別追加（例: Cloud Run Job → 新種別） | `src/02_copilot-prompts.md` の前提欄・4-ゴールテンプレート |
 | ファイル追加・リネーム | `doc/03_実装カタログ.md` + `README.md` + `CLAUDE.md` のファイルツリー |
 | AI エージェント向けルール変更 | `CLAUDE.md` / `AGENTS.md` |
 | ドキュメント運用ルールの変更 | この `doc/README.md` |
@@ -64,4 +64,4 @@ src/01_workflow-guide.md  >  src/02_prompt-templates.md  >  README.md
 
 - `src/01_workflow-guide.md` の「正本」という位置付けは絶対。weaken する表現（「暫定」「TBD」）を入れるなら必ず User に確認
 - `doc/03_実装カタログ.md` は放置すると実態と乖離する。ファイル追加・リネーム時に更新する
-- `src/01_workflow-guide.md` と `src/02_prompt-templates.md` のステップ番号・mermaid 図・プロンプト番号が常に一致していることを確認する
+- `src/01_workflow-guide.md` と `src/02_copilot-prompts.md` のステップ番号・mermaid 図・プロンプト番号が常に一致していることを確認する
