@@ -11,7 +11,8 @@ README.md   … リポジトリ入口（目的 / ワークフロー全体像 / s
 src/
   01_workflow-guide.md    … 運用ガイド本体（フロー図 + チェックリスト）
   02_copilot-prompts.md  … 各ステップで Copilot に渡すプロンプト雛形（GCP / MLOps / Terraform 向け）
-  03_plan-templates.md   … 作業計画書テンプレート（ゴール・成功定義・種別別雛形）
+  03_plan-templates.md   … 作業計画書テンプレート（ゴール・成功定義・種別別雛形）+ 実装サンプルメモ雛形
+  04_spec-template.md    … 仕様書テンプレート（リーダー/クライアントが記入する入力側）
 ```
 
 git は初期化済みだがまだ 1 コミットも無い（全ファイル untracked、ブランチは `master`）。

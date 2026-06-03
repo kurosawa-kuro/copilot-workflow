@@ -27,7 +27,8 @@ GitHub Copilot を使った開発作業を、メンバーが **START（仕様書
 |---|---|
 | [src/01_workflow-guide.md](src/01_workflow-guide.md) | **運用ガイド本体（正本）**。mermaid フロー図 + 8 ステップのチェックリスト |
 | [src/02_copilot-prompts.md](src/02_copilot-prompts.md) | 各ステップで Copilot に渡すプロンプト集（GCP / MLOps / Terraform 向け） |
-| [src/03_plan-templates.md](src/03_plan-templates.md) | 作業計画書テンプレート（ゴール・成功定義・種別別確認方法の雛形） |
+| [src/03_plan-templates.md](src/03_plan-templates.md) | 作業計画書テンプレート（ゴール・成功定義・種別別確認方法の雛形）+ 実装サンプルメモ雛形 |
+| [src/04_spec-template.md](src/04_spec-template.md) | 仕様書テンプレート（リーダー/クライアントが記入する。着手前確認の通過条件を含む） |
 
 3 ファイルは密結合。ステップの追加・削除・番号変更は `01` と `02` の両方に反映する。タスク種別変更は `02` の前提欄と `03` の成功定義テーブルの両方に反映する。
 
