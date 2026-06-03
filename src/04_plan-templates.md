@@ -3,7 +3,7 @@
 作業計画書の記入雛形。ゲート①提出物として使う。上から順に埋める。
 コードサンプルは含めない（方針・地図に徹する）。
 
-> 参照: [01_workflow-guide.md](01_workflow-guide.md) の4つの柱 / [02_copilot-prompts.md](02_copilot-prompts.md) の Step 4 プロンプト
+> 参照: [01_workflow-guide.md](01_workflow-guide.md) の5つの柱 / [02_copilot-prompts.md](02_copilot-prompts.md) の Step 4 プロンプト
 
 ---
 
@@ -103,10 +103,11 @@ Cloud Run Job（Pythonバッチ）/ Vertex AI Pipeline / Elastic Search / Terraf
 ## 🟡 テスト方針
 > 📌 条件: Cloud Run Job / Vertex AI Pipeline のみ。Elastic Search・Terraform は成功定義の確認方法で代替するため不要
 
+<!-- 正常系 / 異常系 / 境界条件を列挙。Cloud Run Job・Vertex AI Pipeline は冪等性テスト（同じ入力で2回実行して行数・値が変わらない）を必ず含める -->
 -
 
 ## 🟡 リスク
-> 📌 条件: 本番データ変更 / 共有リソース / 大量データ処理 / 初めての技術領域 のいずれかに該当する場合
+> 📌 条件: Cloud Run Job / Vertex AI Pipeline（冪等性リスクは常に検討）/ 本番データ変更 / 共有リソース / 大量データ処理 / 初めての技術領域 のいずれかに該当する場合
 
 -
 
