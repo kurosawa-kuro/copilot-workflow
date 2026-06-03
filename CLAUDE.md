@@ -16,7 +16,7 @@ src/
   05_sample-memo-template.md … 実装サンプルメモテンプレート（メンバー自身用・提出不要）
 ```
 
-git は初期化済みだがまだ 1 コミットも無い（全ファイル untracked、ブランチは `master`）。
+git は初期化済みで、ブランチは `master`。作業前に `git status --short` で未コミット変更を確認する。
 
 ## ドキュメントが規定するワークフロー
 

@@ -9,9 +9,8 @@
 | ファイル | 役割 | 主な読者 | 更新契機 |
 |---|---|---|---|
 | [`01_仕様と設計.md`](./01_仕様と設計.md) | ワークフロー仕様・設計思想・タスク種別定義 | LLM / 設計レビュー | 要件・制約変更時 |
-| [`02_移行ロードマップ.md`](./02_移行ロードマップ.md) | 採用・不採用の決定事項・スコープ確定記録 | LLM / 開発者 | 方針変更時 |
-| [`03_実装カタログ.md`](./03_実装カタログ.md) | ファイル構成・各ファイルの役割・権威順位 | 新規参加者 / LLM | ファイル追加・変更時 |
-| [`04_運用.md`](./04_運用.md) | ドキュメント更新手順・PR 運用・新ステップ追加手順 | 参加者 / 運用担当 | 手順変更時 |
+| [`02_実装カタログ.md`](./02_実装カタログ.md) | ファイル構成・各ファイルの役割・権威順位 | 新規参加者 / LLM | ファイル追加・変更時 |
+| [`03_運用.md`](./03_運用.md) | ドキュメント更新手順・PR 運用・新ステップ追加手順 | 参加者 / 運用担当 | 手順変更時 |
 | [`../README.md`](../README.md) | リポジトリ概要・ドキュメント導線 | 初見者 | 構成・ゴール変更時 |
 | [`../CLAUDE.md`](../CLAUDE.md) | Claude Code 向け作業ガイド | Claude Code | 作業ルール変更時 |
 
@@ -20,10 +19,13 @@
 ## 2. 権威順位（矛盾したときの勝者）
 
 ```
-src/01_workflow-guide.md  >  src/02_copilot-prompts.md  >  README.md
+src/01_workflow-guide.md
+> src/02_copilot-prompts.md
+> src/04_plan-templates.md
+> README.md
 ```
 
-`doc/` 配下のドキュメントは上 3 者の解説・補完であり従属。3 者が互いに矛盾した場合は `src/01_workflow-guide.md` を正として他を合わせ、User に flag する。
+`doc/` 配下のドキュメントは上位文書の解説・補完であり従属。上位文書が互いに矛盾した場合は `src/01_workflow-guide.md` を正として他を合わせ、User に flag する。
 
 ---
 
@@ -33,7 +35,7 @@ src/01_workflow-guide.md  >  src/02_copilot-prompts.md  >  README.md
 |---|---|
 | ワークフローステップの追加・削除・番号変更 | `src/01_workflow-guide.md` → `src/02_copilot-prompts.md`（同一変更） |
 | 新タスク種別追加（例: Cloud Run Job → 新種別） | `src/02_copilot-prompts.md` の前提欄・4-ゴールテンプレート |
-| ファイル追加・リネーム | `doc/03_実装カタログ.md` + `README.md` + `CLAUDE.md` のファイルツリー |
+| ファイル追加・リネーム | `doc/02_実装カタログ.md` + `README.md` + `CLAUDE.md` のファイルツリー |
 | AI エージェント向けルール変更 | `CLAUDE.md` / `AGENTS.md` |
 | ドキュメント運用ルールの変更 | この `doc/README.md` |
 
@@ -63,5 +65,5 @@ src/01_workflow-guide.md  >  src/02_copilot-prompts.md  >  README.md
 ## 6. メンテナンス観点
 
 - `src/01_workflow-guide.md` の「正本」という位置付けは絶対。weaken する表現（「暫定」「TBD」）を入れるなら必ず User に確認
-- `doc/03_実装カタログ.md` は放置すると実態と乖離する。ファイル追加・リネーム時に更新する
+- `doc/02_実装カタログ.md` は放置すると実態と乖離する。ファイル追加・リネーム時に更新する
 - `src/01_workflow-guide.md` と `src/02_copilot-prompts.md` のステップ番号・mermaid 図・プロンプト番号が常に一致していることを確認する

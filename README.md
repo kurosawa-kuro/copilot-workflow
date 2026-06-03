@@ -31,7 +31,7 @@ GitHub Copilot を使った開発作業を、メンバーが **START（仕様書
 | [src/03_spec-template.md](src/03_spec-template.md) | 依頼仕様書テンプレート（リーダー/クライアントが記入する。着手前確認の通過条件を含む） |
 | [src/05_sample-memo-template.md](src/05_sample-memo-template.md) | 実装サンプルメモテンプレート（メンバー自身用・提出不要） |
 
-3 ファイルは密結合。ステップの追加・削除・番号変更は `01` と `02` の両方に反映する。タスク種別変更は `02` の前提欄と `03` の成功定義テーブルの両方に反映する。
+主要ドキュメントは密結合。ステップの追加・削除・番号変更は `src/01_workflow-guide.md` と `src/02_copilot-prompts.md` の両方に反映する。タスク種別変更は `src/02_copilot-prompts.md` の前提欄と `src/04_plan-templates.md` の成功定義テーブルの両方に反映する。
 
 ## ドキュメント早見
 
