@@ -23,7 +23,7 @@ AI コーディングエージェント共通の作業ガイド。
 ```text
 src/01_workflow-guide.md
 > src/02_copilot-prompts.md
-> src/03_plan-templates.md
+> src/04_plan-templates.md
 > README.md
 ```
 
@@ -32,9 +32,9 @@ src/01_workflow-guide.md
 ## 更新ルール
 
 - ワークフローのステップ追加・削除・番号変更は `src/01_workflow-guide.md` と `src/02_copilot-prompts.md` の両方に反映する
-- タスク種別追加・成功定義変更は `src/02_copilot-prompts.md` の前提欄と `src/03_plan-templates.md` の成功定義テーブルの両方に反映する
+- タスク種別追加・成功定義変更は `src/02_copilot-prompts.md` の前提欄と `src/04_plan-templates.md` の成功定義テーブルの両方に反映する
 - README の全体像やドキュメント構成が変わる変更は、同一変更で `README.md` も更新する
-- `src/01_workflow-guide.md` は運用ガイド本体、`src/02_copilot-prompts.md` は各ステップに 1:1 対応するプロンプト例集、`src/03_plan-templates.md` は作業計画書テンプレートとして扱う
+- `src/01_workflow-guide.md` は運用ガイド本体、`src/02_copilot-prompts.md` は各ステップに 1:1 対応するプロンプト例集、`src/04_plan-templates.md` は作業計画書テンプレートとして扱う
 - 「作業計画書」は必須提出物、「実装サンプルメモ」は任意・自分用でリーダー提出不要。この区別を崩さない
 - 実在確認の詳細手順は `src/02_copilot-prompts.md` に集約し、ガイド側は要点に留める
 - 関連ドキュメントは同一変更でまとめて更新する

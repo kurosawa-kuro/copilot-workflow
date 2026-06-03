@@ -124,7 +124,7 @@
 以下を Markdown で出力:
 - タスク種別（Cloud Run Job（Pythonバッチ）/ Vertex AI Pipeline / Elastic Search / Terraform / その他）
 - タスクゴール（このタスクで達成したいこと、1〜3文で。技術手段ではなく「何が変わるか」を書く）
-- 成功定義（確認方法とセットで表形式。種別ごとの確認方法は [03_plan-templates.md](03_plan-templates.md) を参照）
+- 成功定義（確認方法とセットで表形式。種別ごとの確認方法は [04_plan-templates.md](04_plan-templates.md) を参照）
 - リーダー・メンバー共通認識（スコープに含まれること / スコープに含まれないこと / 判断が難しいケース）
 - 実装方針（処理の流れを箇条書き）
 - 変更/新規対象ファイル
